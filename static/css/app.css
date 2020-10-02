@@ -1,0 +1,11 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(245, 247, 255);
+    width: 60%;
+    margin: 20px auto;
+}

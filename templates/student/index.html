@@ -1,0 +1,10 @@
+{% extends 'layouts/base.html' %}
+
+{% block content %}
+<h2>Student list</h2></br>
+<ul>
+{% for std in student %}
+    <li><a href="{% url 'student:detail' std.id %}">{{std.name}} - {{std.address}}</a></li>
+{% endfor %}
+</ul>
+{% endblock %}

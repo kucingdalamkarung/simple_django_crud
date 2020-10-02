@@ -1,0 +1,16 @@
+{% extends 'layouts/base.html' %}
+
+{% block content %}
+<div>
+    <h2>Input Student</h2></br>
+    <form action="{% url 'student:save' %}" method="post">
+        {% csrf_token %}
+        <label for="student-name">Student Name</label>
+        <input type="text" name="name" placeholder="Student name" id="student-name"></br>
+        <label for="student-address">Student Address</label>
+        <textarea id="student-address" name="address">
+        </textarea></br>
+        <button type="submit">Save</button>
+    </form>
+</div>
+{% endblock %}
